@@ -1,4 +1,4 @@
-FROM caffe
+FROM jrlangford/caffe
 MAINTAINER Jonathan Langford <jrobinlangford@gmail.com>
 
 RUN apt-get update && \
