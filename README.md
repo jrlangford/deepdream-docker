@@ -3,6 +3,8 @@
 This is a docker container that can run Google's [ deepdream ] ( https://github.com/google/deepdream ) repo.
 
 ##Start Jupyter
+Jupyter is an interactive notebook environment running in a web server.
+Google's deepdream is distributed as a python notebook.
 ```
 $ ./run.sh
 ```
@@ -10,12 +12,12 @@ The host's 8888 port is forwarded to Jupyter's UI port so you can access it in t
 ```
 <hostname>:8888
 ```
-Now you can access the `deepdream` directory and open the notebook `dream.ipynb`
+Now you can access the `deepdream` directory and open the notebook `dream.ipynb`i.
 Follow the notebook's intructions to try deep dream.
 
-The first run takes longer since the repo's images are fetched from the docker hub.
+The first run takes longer since the repo's container images and a deep neural network model are fetched from the docker hub.
 
-##Stop IPython
+##Stop Jupyter
 ```
 $ ./stop.sh
 ```
